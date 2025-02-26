@@ -1,5 +1,5 @@
 @description('Generate a Suffix based on the Resource Group ID')
-param suffix string = uniqueString(resourceGroup().id)
+param sku string = 'S1' // The SKU of App Service Plan
 
 @description('Use the Resource Group Location')
 param location string = resourceGroup().location
